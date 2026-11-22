@@ -1,17 +1,32 @@
+import React from 'react';
+
 interface AssignButtonProps {
-  assigned: boolean;
-  onToggle: () => void;
+  assignedTo?: string;
+  onClick: () => void;
 }
 
-export function AssignButton({ assigned, onToggle }: AssignButtonProps) {
+export const AssignButton: React.FC<AssignButtonProps> = ({ assignedTo, onClick }) => {
+  const isAssigned = Boolean(assignedTo);
+
   return (
     <button
       type="button"
-      className={`btn-secondary${assigned ? ' btn-secondary--active' : ''}`}
-      aria-pressed={assigned}
-      onClick={onToggle}
+      onClick={onClick}
+      style={{
+        height: '40px',
+        padding: '0 16px',
+        borderRadius: 'var(--radius-md)',
+        backgroundColor: 'var(--color-bg-elevated)',
+        border: `1px solid ${isAssigned ? 'var(--color-accent-primary)' : 'var(--color-border-subtle)'}`,
+        color: isAssigned ? 'var(--color-accent-primary)' : 'var(--color-text-primary)',
+        fontSize: '13px',
+        fontWeight: 500,
+        whiteSpace: 'nowrap',
+        cursor: 'pointer',
+        transition: 'all var(--transition-fast)',
+      }}
     >
-      {assigned ? 'Assigned to me' : 'Assign to me'}
+      {isAssigned ? `Assigned to ${assignedTo} ✓` : 'Assign to Me'}
     </button>
   );
-}
+};

@@ -1,36 +1,44 @@
-/* 1:1 mapping of Figma color/spacing tokens.
-   TODO: replace placeholder values with the exact values from Figma. */
 :root {
-  /* Surfaces */
-  --color-bg: #0b0f14;
-  --color-surface: #121821;
-  --color-surface-raised: #1a2230;
-  --color-border: #263041;
+  /* Backgrounds */
+  --color-bg-canvas: #070b14;
+  --color-bg-surface: #0b1120;
+  --color-bg-elevated: #111827;
+  --color-bg-selected: rgba(6, 182, 212, 0.08);
+  --color-scrim: rgba(2, 6, 23, 0.55);
+
+  /* Borders */
+  --color-border-subtle: #1e293b;
+  --color-border-focus: #06b6d4;
 
   /* Text */
-  --color-text: #e6edf3;
-  --color-text-muted: #8b98a9;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
 
-  /* Accent & focus */
-  --color-accent: #3b82f6;
-  --color-focus: #60a5fa;
+  /* Brand & Interactive Accents */
+  --color-accent-primary: #06b6d4;
+  --color-accent-hover: #0891b2;
+  --color-accent-ink: #070b14;
 
-  /* Severity */
-  --color-sev-critical: #ef4444;
-  --color-sev-high: #f97316;
-  --color-sev-medium: #eab308;
-  --color-sev-low: #22c55e;
+  /* Semantic Severity & Status */
+  --color-status-critical: #ef4444;
+  --color-status-critical-bg: rgba(239, 68, 68, 0.12);
+  --color-status-high: #f59e0b;
+  --color-status-high-bg: rgba(245, 158, 11, 0.12);
+  --color-status-medium: #38bdf8;
+  --color-status-medium-bg: rgba(56, 189, 248, 0.12);
+  --color-status-low: #94a3b8;
+  --color-status-low-bg: rgba(148, 163, 184, 0.12);
+  --color-status-success: #10b981;
 
-  /* Spacing */
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-6: 24px;
-  --space-8: 32px;
-
-  /* Radius */
+  /* Typography & Radii */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
   --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-pill: 999px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  /* Motion */
+  --transition-fast: 120ms ease-out;
+  --transition-drawer: 250ms cubic-bezier(0.16, 1, 0.3, 1);
 }
