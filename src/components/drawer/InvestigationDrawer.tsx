@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { SecurityAlert } from '../../types/alert';
+import type { SecurityAlert } from '../../types/alert';
 import { Badge } from '../triage/Badge';
 import { AssignButton } from '../ui/AssignButton';
 

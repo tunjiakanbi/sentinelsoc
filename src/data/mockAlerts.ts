@@ -1,4 +1,4 @@
-import { SecurityAlert } from '../types/alert';
+import type { SecurityAlert } from '../types/alert';
 
 export const INITIAL_ALERTS: SecurityAlert[] = [
   {

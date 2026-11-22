@@ -1,5 +1,5 @@
 import React from 'react';
-import { Severity } from '../../types/alert';
+import type { Severity } from '../../types/alert';
 
 interface BadgeProps {
   severity: Severity;

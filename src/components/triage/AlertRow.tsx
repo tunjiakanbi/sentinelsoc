@@ -1,11 +1,11 @@
-import type { Alert } from '../../types/alert';
+import type { SecurityAlert } from '../../types/alert';
 import { Badge } from './Badge';
 
 interface AlertRowProps {
-  alert: Alert;
+  alert: SecurityAlert;
   selected: boolean;
   contained: boolean;
-  onSelect: (alert: Alert) => void;
+  onSelect: (alert: SecurityAlert) => void;
 }
 
 // States: Default, Hover (CSS :hover), Selected, Contained
@@ -25,8 +25,8 @@ export function AlertRow({ alert, selected, contained, onSelect }: AlertRowProps
         <Badge severity={alert.severity} />
       </td>
       <td>{alert.title}</td>
-      <td>{alert.mitreTechnique}</td>
-      <td>{contained ? 'Contained' : alert.status}</td>
+      <td>{alert.mitreTactic}</td>
+      <td>{contained ? 'Contained' : 'Open'}</td>
     </tr>
   );
 }
