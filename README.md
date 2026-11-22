@@ -1,2 +1,1 @@
-# sentinelsoc
-Dark-mode SOC alert triage console built with React, TypeScript, and CSS design tokens—streamlining threat detection, KQL investigation, and one-click containment.
+SentinelSOC is a high-velocity Security Operations Center (SOC) alert triage and containment console built with React, TypeScript, and a tokenized dark-mode design system translated directly from Figma. Designed to reduce Mean Time to Triage (MTTT) and alert fatigue, it unifies real-time SLA KPIs, MITRE ATT&CK queue scanning, slide-over KQL telemetry drawers, stateful analyst ownership controls, and keyboard-accessible (Esc) containment workflows into a single continuous viewport.
